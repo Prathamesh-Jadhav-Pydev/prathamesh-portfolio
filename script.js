@@ -143,11 +143,11 @@ $$(".shot[data-src]").forEach(f => {
      s can be a local file ("assets/videos/name.mp4") or a YouTube link / "yt:VIDEOID". Add as many videos as you like. */
   const VIDEOS = [
     { t: "3D Typography Animation", c: "3D Art", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Blender"] },
-    { t: "Cinematic Environment Flythrough", c: "3D Art", s: "./assets/videos/two.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Camera animation"] },
-    { t: "Lighting & Rendering Study", c: "3D Art", s: "./assets/videos/three.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Lighting"] },
-    { t: "Motion Graphics Reel", c: "Motion Graphics", s: "./assets/videos/four.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
-    { t: "Cinematic Edit", c: "Video Edit", s: "./assets/videos/five.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
-    { t: "Short-form Video", c: "Short-form", s: "./assets/videos/six.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] }
+    { t: "Cinematic Environment Flythrough", c: "3D Art", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Blender", "Camera animation"] },
+    { t: "Lighting & Rendering Study", c: "3D Art", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Blender", "Lighting"] },
+    { t: "Motion Graphics Reel", c: "Motion Graphics", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Add tool"] },
+    { t: "Cinematic Edit", c: "Video Edit", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Add tool"] },
+    { t: "Short-form Video", c: "Short-form", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Add tool"] }
   ];
   const ytId = s => (/^yt:([\w-]{11})$/.exec(s) || /(?:youtu\.be\/|[?&]v=|embed\/|shorts\/)([\w-]{11})/.exec(s) || [])[1];
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
