@@ -142,12 +142,12 @@ $$(".shot[data-src]").forEach(f => {
   /* EDIT THIS LIST. t = title, c = category (filters are built from these), s = video source, d = description, k = tools, p = optional poster image.
      s can be a local file ("assets/videos/name.mp4") or a YouTube link / "yt:VIDEOID". Add as many videos as you like. */
   const VIDEOS = [
-    { t: "3D Typography Animation", c: "3D Art", s: "assets/videos/Project 100.mp4", d: "Add a one-line description of this piece.", k: ["Blender"] },
-    { t: "Cinematic Environment Flythrough", c: "3D Art", s: "assets/videos/Project 104.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Camera animation"] },
-    { t: "Lighting & Rendering Study", c: "3D Art", s: "assets/videos/Project 3.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Lighting"] },
-    { t: "Motion Graphics Reel", c: "Motion Graphics", s: "assets/videos/Project 97 (2).mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
-    { t: "Cinematic Edit", c: "Video Edit", s: "assets/videos/Project 99.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
-    { t: "Short-form Video", c: "Short-form", s: "assets/videos/Project 100.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] }
+    { t: "3D Typography Animation", c: "3D Art", s: "assets/videos/one.mp4", d: "Add a one-line description of this piece.", k: ["Blender"] },
+    { t: "Cinematic Environment Flythrough", c: "3D Art", s: "assets/videos/two.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Camera animation"] },
+    { t: "Lighting & Rendering Study", c: "3D Art", s: "assets/videos/three.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Lighting"] },
+    { t: "Motion Graphics Reel", c: "Motion Graphics", s: "assets/videos/four.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
+    { t: "Cinematic Edit", c: "Video Edit", s: "assets/videos/five.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
+    { t: "Short-form Video", c: "Short-form", s: "assets/videos/six.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] }
   ];
   const ytId = s => (/^yt:([\w-]{11})$/.exec(s) || /(?:youtu\.be\/|[?&]v=|embed\/|shorts\/)([\w-]{11})/.exec(s) || [])[1];
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
