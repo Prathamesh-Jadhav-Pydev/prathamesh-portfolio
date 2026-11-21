@@ -142,7 +142,7 @@ $$(".shot[data-src]").forEach(f => {
   /* EDIT THIS LIST. t = title, c = category (filters are built from these), s = video source, d = description, k = tools, p = optional poster image.
      s can be a local file ("assets/videos/name.mp4") or a YouTube link / "yt:VIDEOID". Add as many videos as you like. */
   const VIDEOS = [
-    { t: "3D Typography Animation", c: "3D Art", s: "./assets/videos/one.mp4", d: "Add a one-line description of this piece.", k: ["Blender"] },
+    { t: "3D Typography Animation", c: "3D Art", s: "https://www.youtube.com/watch?v=MihUZYDH9RA", d: "Add a one-line description of this piece.", k: ["Blender"] },
     { t: "Cinematic Environment Flythrough", c: "3D Art", s: "./assets/videos/two.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Camera animation"] },
     { t: "Lighting & Rendering Study", c: "3D Art", s: "./assets/videos/three.mp4", d: "Add a one-line description of this piece.", k: ["Blender", "Lighting"] },
     { t: "Motion Graphics Reel", c: "Motion Graphics", s: "./assets/videos/four.mp4", d: "Add a one-line description of this piece.", k: ["Add tool"] },
